@@ -47,3 +47,9 @@ baseurl: "gitpagestest"
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
+
+## TODO:
+
+- default layout
+- layouts
+- rss feed
