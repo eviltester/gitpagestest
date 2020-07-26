@@ -34,3 +34,9 @@ Post is at [/gitpagestest/demo/2020/07/26/test](/gitpagestest/demo/2020/07/26/te
 {% endfor %}
 </li>
 ~~~~~~~~
+
+<ul>
+{% for post in site.posts %}   
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</li>
