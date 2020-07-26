@@ -24,12 +24,20 @@ categories: demo
 
 Post is at [/gitpagestest/demo/2020/07/26/test](/gitpagestest/demo/2020/07/26/test)
 
+## Amend Config to add baseurl
+
+add baseurl as name of project
+
+~~~~~~~~
+baseurl: "gitpagestest"
+~~~~~~~~
+
 ## Add list of posts to the front page
 
 ~~~~~~~~
 <ul>
 {% for post in site.posts %}   
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 ~~~~~~~~
